@@ -1,26 +1,40 @@
+import java.sql.SQLOutput;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        //6.2 Линия
-        Point point1 = new Point(1,3);
-        Point point2 = new Point(5,8);
-        Point point3 = new Point(10,11);
-        Point point4 = new Point(15,19);
+        //6.3 Ломаная линия
+        Point point1 = new Point(1,5);
+        Point point2 = new Point(2,8);
+        Point point3 = new Point(5,3);
+        Point point4 = new Point(8,9);
+        double linesArrayLenght = 0;
+
+        PolyLine polyLine = new PolyLine(point1, point2, point3, point4);
+
+        List<Line> lines = polyLine.getLines();
+
+        System.out.println(polyLine);
+        System.out.println(polyLine.getLength());
+        System.out.println(polyLine.getLines());
 
 
-        Line line1 = new Line (point1, point2);
-        Line line2 = new Line (point3, point4);
-        Line line3 = new Line (line1.endPoint, line2.startPoint);
-        //System.out.println(line1);
-        //System.out.println(line2);
-        System.out.println(line3);
-        line3.startPoint.coorX = 3;
-        line3.startPoint.coorY = 4;
-        line3.endPoint.coorX = 7;
-        line3.endPoint.coorY = 8;
-        System.out.println(line3);
-        //System.out.println(line1);
-        //System.out.println(line2);
-        System.out.println(line1.getLength() + line2.getLength() + line3.getLength());
+        for (int i=0; i<lines.size(); i++) {
+            linesArrayLenght+= lines.get(i).getLength();
+        }
+
+        System.out.println("Результат сравнения длины ломаной линии: " + polyLine.getLength()+" и длины массива линий: "
+                +linesArrayLenght + " - " + (polyLine.getLength()==linesArrayLenght));
+
+        point2.coorX = 12;
+        System.out.println(point2);
+        System.out.println(polyLine);
+        System.out.println(polyLine.getLines());
+
+
+
+
+
 
 
 

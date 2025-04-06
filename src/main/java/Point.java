@@ -1,4 +1,4 @@
-//6.2 Линия
+//6.3 Ломаная линия
 public class Point {
     int coorX;
     int coorY;
