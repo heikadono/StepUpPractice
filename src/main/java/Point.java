@@ -1,8 +1,7 @@
-//6.1 Точка координат
+//6.2 Линия
 public class Point {
     int coorX;
     int coorY;
-
 
     public Point (int coorX, int coorY){
         this.coorX = coorX;
