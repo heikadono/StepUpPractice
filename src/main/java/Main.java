@@ -1,41 +1,29 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //6.3 Ломаная линия
-        Point point1 = new Point(1,5);
-        Point point2 = new Point(2,8);
-        Point point3 = new Point(5,3);
-        Point point4 = new Point(8,9);
-        double linesArrayLenght = 0;
+        //7.3 Ломаная линия
+        // Лист создан для инициализации первоначального списка оценок (если требуется), при инициализации из параметра подобным методом лист не модифицируем
+        List<Integer> grades = new ArrayList<>(Arrays.asList(3, 2, 3));
 
-        PolyLine polyLine = new PolyLine(point1, point2, point3, point4);
-
-        List<Line> lines = polyLine.getLines();
-
-        System.out.println(polyLine);
-        System.out.println(polyLine.getLength());
-        System.out.println(polyLine.getLines());
-
-
-        for (int i=0; i<lines.size(); i++) {
-            linesArrayLenght+= lines.get(i).getLength();
-        }
-
-        System.out.println("Результат сравнения длины ломаной линии: " + polyLine.getLength()+" и длины массива линий: "
-                +linesArrayLenght + " - " + (polyLine.getLength()==linesArrayLenght));
-
-        point2.coorX = 12;
-        System.out.println(point2);
-        System.out.println(polyLine);
-        System.out.println(polyLine.getLines());
-
-
-
-
-
-
+        Student studentNikita = Student.createStudent("Никита");
+        Student studentVlad = Student.createStudent("Vlad", grades);
+        System.out.println(studentVlad);
+        System.out.println(studentNikita);
+        System.out.println(studentVlad.getGrades());
+        studentNikita.addGrade(5);
+        System.out.println(studentNikita);
+        studentVlad.addGrade(4);
+        studentVlad.addGrade(2);
+        studentVlad.addGrade(5);
+        System.out.println(studentVlad);
+        studentNikita.addGrade(4);
+        studentNikita.addGrade(2);
+        studentNikita.addGrade(5);
+        System.out.println(studentNikita);
 
 
 
