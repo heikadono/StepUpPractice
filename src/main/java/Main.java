@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //7.3 Ломаная линия
+        //7.3 Студент
         // Лист создан для инициализации первоначального списка оценок (если требуется), при инициализации из параметра подобным методом лист не модифицируем
         List<Integer> grades = new ArrayList<>(Arrays.asList(3, 2, 3));
 
