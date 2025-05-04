@@ -32,7 +32,8 @@ public class Student {
         grades.add(grade);
     }
     public List<Integer> getGrades() {
-        return grades;
+        List<Integer> gradesList = new ArrayList<>(grades);
+        return gradesList;
     }
 
     @Override

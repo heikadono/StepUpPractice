@@ -24,6 +24,8 @@ public class Main {
         studentNikita.addGrade(2);
         studentNikita.addGrade(5);
         System.out.println(studentNikita);
+        System.out.println(studentVlad.getGrades());
+        System.out.println(studentNikita.getGrades());
 
 
 
