@@ -14,11 +14,11 @@ public class Main {
         Point point6 = new Point(1,5);
         List<Point> points = new ArrayList<>(Arrays.asList(point1, point2, point3, point4, point5, point6));
 
+        ClosedPolyLine closedPolyLine = new ClosedPolyLine(points);
 
 
+        System.out.println(closedPolyLine.getLength());
 
- Point3D point3d = new Point3D();
-        System.out.println(point3d.coorX);
 
 
     }

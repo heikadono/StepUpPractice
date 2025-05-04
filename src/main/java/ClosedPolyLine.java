@@ -1,4 +1,11 @@
+import java.util.List;
+
 public class ClosedPolyLine extends PolyLine{
+
+    public ClosedPolyLine (List<Point> points){
+        super(points);
+    }
+
     @Override
     public double getLength (){
         double totalLength =0;
