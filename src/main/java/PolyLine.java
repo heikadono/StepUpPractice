@@ -6,17 +6,11 @@ public class PolyLine {
     List<Point> points = new ArrayList<>();
     List<Line> lines = new ArrayList<>();
 
-    public PolyLine ( Point point1, Point point2, Point point3, Point point4){
-       points.add(point1);
-       points.add(point2);
-       points.add(point3);
-       points.add(point4);
+    public PolyLine (List<Point> points){
+       this.points = points;
     }
-
     public PolyLine (){
-
     }
-
     public List<Line> getLines (){
         lines.clear();
         for (int i=0; i<points.size()-1; i++){

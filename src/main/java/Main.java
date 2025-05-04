@@ -1,4 +1,6 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -8,9 +10,11 @@ public class Main {
         Point point2 = new Point(2,8);
         Point point3 = new Point(5,3);
         Point point4 = new Point(8,9);
+        List<Point> points = new ArrayList<>(Arrays.asList(point1, point2, point3, point4));
         double linesArrayLenght = 0;
 
-        PolyLine polyLine = new PolyLine(point1, point2, point3, point4);
+        PolyLine polyLine = new PolyLine(points);
+
 
         List<Line> lines = polyLine.getLines();
 
