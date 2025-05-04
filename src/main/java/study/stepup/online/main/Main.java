@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.awt.Point;
 
 import study.stepup.online.calculations.Fraction;
 
@@ -13,13 +14,11 @@ import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) {
-        //8.15 Возведение в степень
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите число: ");
-        int num = parseInt(in.next());
-        System.out.println("Введите степень числа: ");
-        int exp = parseInt(in.next());
-        exponentation( num,  exp);
+        //8.16 Простые имена
+        Point point = new Point(3,4);
+        study.stepup.online.geometry.Point point2 = new study.stepup.online.geometry.Point(1,2);
+        System.out.println(point);
+        System.out.println(point2);
 
 
       /*  Fraction fraction1 = new Fraction(3, 5);
@@ -45,8 +44,6 @@ public class Main {
         return sum;
     }*/
 
-    public static void exponentation(int num, int exp){
-        System.out.println("Число " + num + " в степени " + exp + " равно " + (int) pow(num, exp));
-    }
+
 
 }
