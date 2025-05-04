@@ -11,6 +11,7 @@ public class Main {
         Point point3 = new Point(5,3);
         Point point4 = new Point(8,9);
         List<Point> points = new ArrayList<>(Arrays.asList(point1, point2, point3, point4));
+        List<Line> lines = new ArrayList<>();
         double linesArrayLenght = 0;
 
         PolyLine polyLine = new PolyLine(points);
