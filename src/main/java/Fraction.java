@@ -24,11 +24,11 @@ public class Fraction extends Number {
 
     @Override
     public float floatValue() {
-        return numerator / denominator;
+        return (float) numerator / denominator;
     }
 
     @Override
     public double doubleValue() {
-        return numerator / denominator;
+        return (double) numerator / denominator;
     }
 }

@@ -5,24 +5,27 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //8.2 Замкнутая ломаная
-        Point point1 = new Point(1,5);
-        Point point2 = new Point(2,8);
-        Point point3 = new Point(5,3);
-        Point point4 = new Point(8,9);
-        Point point5 = new Point(7,8);
-        Point point6 = new Point(1,5);
-        List<Point> closedPolyLinePoints = new ArrayList<>(Arrays.asList(point1, point2, point3, point4, point5, point6));
-        List<Point> PolyLinePoints = new ArrayList<>(Arrays.asList(point1, point2, point3, point4, point5));
+        //8.6 Сложение
+        Fraction fraction1 = new Fraction(3, 5);
+        Fraction fraction2 = new Fraction(49, 12);
+        Fraction fraction3 = new Fraction(3, 2);
+        Fraction fraction4 = new Fraction(1, 3);
 
-        PolyLine closedPolyLine = new PolyLine(closedPolyLinePoints);
-        PolyLine PolyLine = new PolyLine(PolyLinePoints);
+        List<Double> numbers1 = new ArrayList<>(Arrays.asList((double) 2, fraction1.doubleValue(), 2.3));
+        List<Double> numbers2 = new ArrayList<>(Arrays.asList(3.6, fraction2.doubleValue(), (double) 3, fraction3.doubleValue()));
+        List<Double> numbers3 = new ArrayList<>(Arrays.asList(fraction4.doubleValue(), (double)1));
 
+        System.out.println(sumAll(numbers1));
+        System.out.println(sumAll(numbers2));
+        System.out.println(sumAll(numbers3));
+    }
 
-        System.out.println(closedPolyLine.getLength());
-        System.out.println(PolyLine.getLength());
-
-
-
+    public static double sumAll (List<Double> numbers) {
+        double sum =0;
+        for (int i=0; i<numbers.size(); i++){
+            System.out.println(sum);
+            sum+=numbers.get(i);
+        }
+        return sum;
     }
 }
