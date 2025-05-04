@@ -1,4 +1,4 @@
-package study.stepup.online;
+package study.stepup.online.main;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
