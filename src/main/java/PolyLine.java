@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //6.3 Ломаная линия
-public class PolyLine {
+public class PolyLine implements Measurable {
     List<Point> points = new ArrayList<>();
 
     public PolyLine (List<Point> points){
@@ -12,6 +12,7 @@ public class PolyLine {
 
     }
 
+    @Override
     public double getLength (){
         double totalLength =0;
         for (int i=0; i<points.size()-1; i++){

@@ -1,5 +1,5 @@
 //6.3 Ломаная линия
-public class Line {
+public class Line implements Measurable {
 
     Point startPoint;
     Point endPoint;
@@ -9,6 +9,7 @@ public class Line {
         this.endPoint = endPoint;
     }
 
+    @Override
     public double getLength(){
         return Math.sqrt((this.startPoint.coorX - this.endPoint.coorX) * (this.startPoint.coorX - this.endPoint.coorX)
                 + (this.startPoint.coorY - this.endPoint.coorY) * (this.startPoint.coorY - this.endPoint.coorY));

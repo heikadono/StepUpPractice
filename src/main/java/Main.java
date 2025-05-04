@@ -12,12 +12,15 @@ public class Main {
         Point point4 = new Point(8,9);
         Point point5 = new Point(7,8);
         Point point6 = new Point(1,5);
-        List<Point> points = new ArrayList<>(Arrays.asList(point1, point2, point3, point4, point5, point6));
+        List<Point> closedPolyLinePoints = new ArrayList<>(Arrays.asList(point1, point2, point3, point4, point5, point6));
+        List<Point> PolyLinePoints = new ArrayList<>(Arrays.asList(point1, point2, point3, point4, point5));
 
-        ClosedPolyLine closedPolyLine = new ClosedPolyLine(points);
+        PolyLine closedPolyLine = new PolyLine(closedPolyLinePoints);
+        PolyLine PolyLine = new PolyLine(PolyLinePoints);
 
 
         System.out.println(closedPolyLine.getLength());
+        System.out.println(PolyLine.getLength());
 
 
 
