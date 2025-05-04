@@ -1,7 +1,10 @@
+package study.stepup.online;
+
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import study.stepup.online.calculations.Fraction;
 
 public class Main {
     public static void main(String[] args) {

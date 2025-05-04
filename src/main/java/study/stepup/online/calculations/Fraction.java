@@ -1,3 +1,5 @@
+package study.stepup.online.calculations;
+
 public class Fraction extends Number {
     private   int numerator;
     private int denominator;

@@ -1,9 +1,15 @@
+package study.stepup.online.geometry;
+
+import study.stepup.online.geometry.Line;
+import study.stepup.online.geometry.Point;
+import study.stepup.online.geometry.interfaces.Measurable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 //6.3 Ломаная линия
 public class PolyLine implements Measurable {
-    List<Point> points = new ArrayList<>();
+    public List<Point> points = new ArrayList<>();
 
     public PolyLine (List<Point> points){
         this.points = points;

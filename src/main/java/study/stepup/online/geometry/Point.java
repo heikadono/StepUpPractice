@@ -1,7 +1,9 @@
+package study.stepup.online.geometry;
+
 //6.3 Ломаная линия
 public class Point {
-    int coorX;
-    int coorY;
+    public int coorX;
+    public int coorY;
 
     public Point (){
 

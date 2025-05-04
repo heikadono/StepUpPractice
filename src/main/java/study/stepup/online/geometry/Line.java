@@ -1,10 +1,14 @@
+package study.stepup.online.geometry;
+
+import study.stepup.online.geometry.interfaces.Measurable;
+
 import java.util.List;
 
 //6.3 Ломаная линия
 public class Line implements Measurable {
 
-    Point startPoint;
-    Point endPoint;
+    public Point startPoint;
+    public Point endPoint;
 
     public Line (Point startPoint, Point endPoint){
         this.startPoint = startPoint;
