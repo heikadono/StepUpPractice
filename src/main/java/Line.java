@@ -1,3 +1,5 @@
+import java.util.List;
+
 //6.3 Ломаная линия
 public class Line implements Measurable {
 
