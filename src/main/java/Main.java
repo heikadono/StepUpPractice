@@ -5,27 +5,17 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //7.3 Студент
-        // Лист создан для инициализации первоначального списка оценок (если требуется), при инициализации из параметра подобным методом лист не модифицируем
-        /*List<Integer> grades = new ArrayList<>(Arrays.asList(3, 2, 3));
+        //8.2 Замкнутая ломаная
+        Point point1 = new Point(1,5);
+        Point point2 = new Point(2,8);
+        Point point3 = new Point(5,3);
+        Point point4 = new Point(8,9);
+        Point point5 = new Point(7,8);
+        Point point6 = new Point(1,5);
+        List<Point> points = new ArrayList<>(Arrays.asList(point1, point2, point3, point4, point5, point6));
 
-        Student studentNikita = Student.createStudent("Никита");
-        Student studentVlad = Student.createStudent("Vlad", grades);
-        System.out.println(studentVlad);
-        System.out.println(studentNikita);
-        System.out.println(studentVlad.getGrades());
-        studentNikita.addGrade(5);
-        System.out.println(studentNikita);
-        studentVlad.addGrade(4);
-        studentVlad.addGrade(2);
-        studentVlad.addGrade(5);
-        System.out.println(studentVlad);
-        studentNikita.addGrade(4);
-        studentNikita.addGrade(2);
-        studentNikita.addGrade(5);
-        System.out.println(studentNikita);
-        System.out.println(studentVlad.getGrades());
-        System.out.println(studentNikita.getGrades()); */
+
+
 
  Point3D point3d = new Point3D();
         System.out.println(point3d.coorX);
