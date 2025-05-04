@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         //7.3 Студент
         // Лист создан для инициализации первоначального списка оценок (если требуется), при инициализации из параметра подобным методом лист не модифицируем
-        List<Integer> grades = new ArrayList<>(Arrays.asList(3, 2, 3));
+        /*List<Integer> grades = new ArrayList<>(Arrays.asList(3, 2, 3));
 
         Student studentNikita = Student.createStudent("Никита");
         Student studentVlad = Student.createStudent("Vlad", grades);
@@ -25,9 +25,10 @@ public class Main {
         studentNikita.addGrade(5);
         System.out.println(studentNikita);
         System.out.println(studentVlad.getGrades());
-        System.out.println(studentNikita.getGrades());
+        System.out.println(studentNikita.getGrades()); */
 
-
+ Point3D point3d = new Point3D();
+        System.out.println(point3d.coorX);
 
 
     }
