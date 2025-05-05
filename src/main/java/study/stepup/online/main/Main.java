@@ -16,10 +16,10 @@ public class Main {
         //8.15 Возведение в степень
         Scanner in = new Scanner(System.in);
         System.out.println("Введите число: ");
-        int num = parseInt(in.next());
+        String num = in.next();
         System.out.println("Введите степень числа: ");
-        int exp = parseInt(in.next());
-        exponentation( num,  exp);
+        String exp = in.next();
+        System.out.println("Число " + num + " в степени " + exp + " равно " + exponentation(num, exp));
 
 
       /*  Fraction fraction1 = new Fraction(3, 5);
@@ -45,8 +45,8 @@ public class Main {
         return sum;
     }*/
 
-    public static void exponentation(int num, int exp){
-        System.out.println("Число " + num + " в степени " + exp + " равно " + (int) pow(num, exp));
+    public static int exponentation(String num, String exp){
+        return (int) pow(parseInt(num), parseInt(exp));
     }
 
 }
