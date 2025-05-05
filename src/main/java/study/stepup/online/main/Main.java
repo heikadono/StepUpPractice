@@ -8,22 +8,33 @@ import java.util.Scanner;
 
 
 import study.stepup.online.calculations.Fraction;
-import study.stepup.online.geometry.Point;
+import study.stepup.online.geometry.*;
+
 
 import static java.lang.Integer.parseInt;
 import static java.lang.Math.pow;
 
 public class Main {
-    public static void main(String[] args) {
-        //8.16 Простые имена
+    public static void main(String[] args) throws CloneNotSupportedException {
+
         Point point = new Point(3,4);
         Point point2 = new Point(1,4);
-        System.out.println(point);
+        /*System.out.println(point);
         System.out.println(point2);
         System.out.println("Равенство точек: " + point.equals(point2));
         Point point3 = point.clone();
         System.out.println(point3);
-        System.out.println("Равенство точек: " + point.equals(point3));
+        System.out.println("Равенство точек: " + point.equals(point3)); */
+        Line line = new Line(point, point2);
+        System.out.println(line);
+        Line line2 = line.clone();
+        System.out.println(line2);
+        System.out.println("Равенство линий: " + line.equals(line2));
+        Point point4 = new Point (1,2);
+        line.endPoint = point4;
+        System.out.println("Равенство линий: " + line.equals(line2));
+
+
 
 
 
