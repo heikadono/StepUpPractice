@@ -19,20 +19,30 @@ public class Main {
 
         Point point = new Point(3,4);
         Point point2 = new Point(1,4);
+        Point point3 = new Point(2,5);
+        Point point4 = new Point(6,8);
+        Point point5 = new Point(4,3);
+        List<Point> points = new ArrayList<>(Arrays.asList(point, point2, point3, point4, point5));
+        PolyLine polyLine = new PolyLine(points);
+        System.out.println(polyLine);
+        PolyLine polyLine2 = polyLine.clone();
+        System.out.println(polyLine2);
+        System.out.println("Равенство замкнытых линий : " + polyLine.equals(polyLine2));
+        Point point7 = new Point (1,2);
         /*System.out.println(point);
         System.out.println(point2);
         System.out.println("Равенство точек: " + point.equals(point2));
         Point point3 = point.clone();
         System.out.println(point3);
         System.out.println("Равенство точек: " + point.equals(point3)); */
-        Line line = new Line(point, point2);
+        /*Line line = new Line(point, point2);
         System.out.println(line);
         Line line2 = line.clone();
         System.out.println(line2);
         System.out.println("Равенство линий: " + line.equals(line2));
         Point point4 = new Point (1,2);
         line.endPoint = point4;
-        System.out.println("Равенство линий: " + line.equals(line2));
+        System.out.println("Равенство линий: " + line.equals(line2));*/
 
 
 

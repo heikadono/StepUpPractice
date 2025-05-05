@@ -6,16 +6,38 @@ import study.stepup.online.geometry.interfaces.Measurable;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 //6.3 Ломаная линия
 public class PolyLine implements Measurable {
     public List<Point> points = new ArrayList<>();
 
     public PolyLine (List<Point> points){
+
         this.points = points;
     }
     public PolyLine (){
 
+    }
+
+    @Override
+    public PolyLine clone()  {
+        PolyLine polyLine = new PolyLine();
+        polyLine.points = this.points;
+        return polyLine;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PolyLine polyLine = (PolyLine) o;
+        return Objects.equals(points, polyLine.points);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(points);
     }
 
     @Override
