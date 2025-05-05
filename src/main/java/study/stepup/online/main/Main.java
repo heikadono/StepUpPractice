@@ -5,9 +5,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.awt.Point;
+
 
 import study.stepup.online.calculations.Fraction;
+import study.stepup.online.geometry.Point;
 
 import static java.lang.Integer.parseInt;
 import static java.lang.Math.pow;
@@ -16,9 +17,14 @@ public class Main {
     public static void main(String[] args) {
         //8.16 Простые имена
         Point point = new Point(3,4);
-        study.stepup.online.geometry.Point point2 = new study.stepup.online.geometry.Point(1,2);
+        Point point2 = new Point(1,4);
         System.out.println(point);
         System.out.println(point2);
+        System.out.println("Равенство точек: " + point.equals(point2));
+        Point point3 = point.clone();
+        System.out.println(point3);
+        System.out.println("Равенство точек: " + point.equals(point3));
+
 
 
       /*  Fraction fraction1 = new Fraction(3, 5);
