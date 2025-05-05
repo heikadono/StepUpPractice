@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 
+import study.stepup.online.Sauce;
 import study.stepup.online.calculations.Fraction;
 import study.stepup.online.geometry.*;
 
@@ -16,8 +17,13 @@ import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
+        System.out.println(Sauce.NOT_SPICY);
+        System.out.println(Sauce.VERY_SPICY);
+        System.out.println(Sauce.SPICY);
 
-        Point point = new Point(3,4);
+
+
+        /*Point point = new Point(3,4);
         Point point2 = new Point(1,4);
         Point point3 = new Point(2,5);
         Point point4 = new Point(6,8);
