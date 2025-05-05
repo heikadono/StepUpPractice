@@ -28,7 +28,6 @@ public class Main {
         PolyLine polyLine2 = polyLine.clone();
         System.out.println(polyLine2);
         System.out.println("Равенство замкнытых линий : " + polyLine.equals(polyLine2));
-        Point point7 = new Point (1,2);
         /*System.out.println(point);
         System.out.println(point2);
         System.out.println("Равенство точек: " + point.equals(point2));
