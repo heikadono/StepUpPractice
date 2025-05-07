@@ -1,25 +1,27 @@
 package study.stepup.online.calculations;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Sum {
-    List <String> numbers = new ArrayList<>();
-    public double sum;
 
-    public Sum (List <String> numbers) {
-        this.numbers = numbers;
+
+    public Sum(List<String> numbers) {
         setSum(numbers);
     }
 
-    public void setSum(List <String> numbers) {
-        for (String s : numbers){
-
-            if ()
-                Double.parseDouble(s);
-                sum = sum +0;
-
-    }
+    private void setSum(List<String> numbers) {
+        double sum = 0;
+        for (String s : numbers) {
+            sum += getDouble(s);
+        }
         System.out.println("Результат :" + sum);
+    }
+
+    private double getDouble(String s) {
+        double d = 0;
+        if (s.matches("\\d+")) {
+            d = Double.parseDouble(s);
+        }
+        return d;
     }
 }
