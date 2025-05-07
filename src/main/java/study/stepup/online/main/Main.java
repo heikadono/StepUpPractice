@@ -17,7 +17,7 @@ import static java.lang.Integer.parseInt;
 import static java.lang.Math.pow;
 
 public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) {
         //System.out.println(Sauce.NOT_SPICY);
         //System.out.println(Sauce.VERY_SPICY);
         //System.out.println(Sauce.SPICY);
