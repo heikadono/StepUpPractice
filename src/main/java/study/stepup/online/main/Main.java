@@ -28,11 +28,15 @@ public class Main {
         PolyLine polyLine2 = polyLine.clone();
         System.out.println(polyLine2);
         System.out.println("Равенство замкнытых линий : " + polyLine.equals(polyLine2));
+        Point point7 = new Point(3,4);
+        points.add(point7);
+        System.out.println(polyLine);
+        System.out.println(polyLine2);
         /*System.out.println(point);
         System.out.println(point2);
         System.out.println("Равенство точек: " + point.equals(point2));
-        Point point3 = point.clone();
-        System.out.println(point3);
+        Point point7 = point.clone();
+        System.out.println(point7);
         System.out.println("Равенство точек: " + point.equals(point3)); */
         /*Line line = new Line(point, point2);
         System.out.println(line);

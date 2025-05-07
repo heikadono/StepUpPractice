@@ -23,7 +23,9 @@ public class PolyLine implements Measurable {
     @Override
     public PolyLine clone()  {
         PolyLine polyLine = new PolyLine();
-        polyLine.points = this.points;
+        for (Point p : points){
+        polyLine.points.add(p.clone());
+         }
         return polyLine;
     }
 
