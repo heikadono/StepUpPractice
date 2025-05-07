@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 import study.stepup.online.Sauce;
 import study.stepup.online.calculations.Fraction;
+import study.stepup.online.calculations.Sum;
 import study.stepup.online.geometry.*;
 
 
@@ -17,9 +18,13 @@ import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
-        System.out.println(Sauce.NOT_SPICY);
-        System.out.println(Sauce.VERY_SPICY);
-        System.out.println(Sauce.SPICY);
+        //System.out.println(Sauce.NOT_SPICY);
+        //System.out.println(Sauce.VERY_SPICY);
+        //System.out.println(Sauce.SPICY);
+        List<String> numbers = new ArrayList<>(Arrays.asList("10", "3qq4", "1"));
+
+        Sum sum =new Sum(numbers);
+
 
 
 
