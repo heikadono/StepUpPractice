@@ -12,12 +12,12 @@ public class Sum {
         setSum(numbers);
     }
 
-    public void setSum(List <String> numbers) throws NumberFormatException {
+    public void setSum(List <String> numbers)  {
         for (String s : numbers){
             try {
                 sum=sum+Double.parseDouble(s);
             } catch (NumberFormatException ex){
-                sum = sum +0;
+                sum =+0;
             }
 
     }
